@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch~n~Sketch</title>
+</head>
+
+<body>
+    <main class="outermostBox">
+
+        <div class="header">
+            <h3>Etch~a~Sketch</h3>
+        </div>
+
+        <div class="mainBox">
+
+            <div class="controlBox">
+
+                <div class="penColor">
+                    <div class="penColor__container">
+                        <input type="color" class="penColor__input" id="color-select">
+                    </div>
+                    <span>Pen Color</span>
+                </div>
+
+                <div class="backgroundColor cc2">
+                    <div class="backgroundColor__container">
+                        <input type="color" class="backgroundColor__input" id="bg-color-select">
+                    </div>
+                    <span>Background Color</span>
+                </div>
+
+                <button class="colorFill">Color Fill</button>
+                <button class="colorGrabber">Color Grabber</button>
+                <button class="toggleEraser">Toggle Eraser</button>
+                <button class="toggleRainbow">Toggle Rainbow</button>
+                <button class="toggleShading">Toggle Shading</button>
+                <button class="toggleLighten">Toggle Lighten</button>
+
+                <div class="sliderBox">
+                    <input type="range" value="24" min="1" max="60" id="rangeSlider"
+                        onmousemove="rangeSliderValue(this.value)" onchange="rangeSlider(this.value)">
+                    <div id="progressBar"></div>
+                </div>
+
+                <p class="gridSize">Grid Size: <span id="rangeValue">24</span>x <span id="rangeValue">24</span></p>
+
+                <button id="gridBtn" class="btnOn">Toggle Grid Lines</button>
+                <button id="clearGrid">Clear</button>
+
+
+            </div>
+
+            <div class="gridBox">
+                <div class="gridBox__container toggle-grid" draggable="false"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
