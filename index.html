@@ -14,74 +14,38 @@
 
         <div class="header">
             <h3>Etch~a~Sketch</h3>
+            <p class="madeBy">Made by <a href="https://github.com/MagentaSpruce">Magenta Spruce<span>🌴</span></a></p>
         </div>
-
-        <div class="mainBox">
-
-            <div class="controlBox">
-
-                <div class="penColor">
-                    <div class="penColor__container">
-                        <input type="color" class="penColor__input" id="color-select">
-                    </div>
-                    <span>Pen Color</span>
-                </div>
-
-                <div class="backgroundColor cc2">
-                    <div class="backgroundColor__container">
-                        <input type="color" class="backgroundColor__input" id="bg-color-select">
-                    </div>
-                    <span>Background Color</span>
-                </div>
-
-                <button class="colorFill">Color Fill</button>
-                <button class="colorGrabber">Color Grabber</button>
-                <button class="toggleEraser">Toggle Eraser</button>
-                <button class="toggleRainbow">Toggle Rainbow</button>
-                <button class="toggleShading">Toggle Shading</button>
-                <button class="toggleLighten">Toggle Lighten</button>
-
-                <div class="sliderBox">
-                    <input type="range" value="24" min="1" max="60" id="rangeSlider"
-                        onmousemove="rangeSliderValue(this.value)" onchange="rangeSlider(this.value)">
-                    <div id="progressBar"></div>
-                </div>
-
-                <p class="gridSize">Grid Size: <span id="rangeValue">24</span>x <span id="rangeValue">24</span></p>
-
-                <button id="gridBtn" class="btnOn">Toggle Grid Lines</button>
-                <button id="clearGrid">Clear</button>
-
-
+    
+        
+        <div class="etcher">
+            <div class="screenHolder">
+                <div class="screen"></div>
             </div>
+<div class="controls">
+    <div class="btns">
+        <button id="reset">Reset</button>
+        <button id="black">Black</button>
+        <button id="rgb">Rainbow</button>
 
-            <div class="gridBox">
-                <div class="gridBox__container toggle-grid" draggable="false"></div>
+                    <div class="colorPrompter">
+                        <input type="color" id="color">
+                        <p>choose a color</p>
+                    </div>
+                    <div class="sliderValue">
+                        <input type="range" min="2" max="100" value="16" id="slider">
+                        <p class="value">16</p>
+                    </div>
+                </div>
             </div>
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
 
 
 
 
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
