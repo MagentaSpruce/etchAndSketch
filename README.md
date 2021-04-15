@@ -66,8 +66,8 @@ function removeAllChildNodes(parent){
 This function removes all of the parent settings (like grid-template-rows and columns) of whatever it is called on - so when we want to remake our grid to a new size this function must be included so we can erase the CSS settings that are hardcodes in the styles file which dictate the grid be 16x16. So if we want to change that, we need to be able to eliminate those specifications and start over. This function does that. 
 
 4) Target every button and interactive element in the DOM and assign eventlisteners.
-
-a) ```JavaScript
+a)
+```JavaScript
 const reset = document.querySelector('#reset');
 reset.addEventListener('click', function(){
     let val = document.getElementById('slider').value;
@@ -78,8 +78,8 @@ reset.addEventListener('click', function(){
 });
 ```
 grid.children are the div cells. For every div cell in the grid, which is determined by val which is the number below the slider. So val*val will equal ALL the div cells inside the grid so on each iteration cell[i] of that grid we change the background color back to its starting color at the same time. 
-
- b) ```JavaScript
+b)
+```JavaScript
  const rgb = document.querySelector('#rgb');
 rgb.addEventListener('click', function(){
     let val = document.getElementById('slider').value;
@@ -93,8 +93,8 @@ rgb.addEventListener('click', function(){
  ```
  
  Each cell gets a listener event added and whenever a mouse hovers then the div cell will call the gretRandomColor() function on itself which will change its background color on each event(hover).
- 
- c) ```JavaScript
+ c)
+```JavaScript
  const black = document.querySelector('#black');
 black.addEventListener('click', function(){
     let val = document.getElementById('slider').value;
@@ -108,7 +108,8 @@ black.addEventListener('click', function(){
 
  ```
  
- d) ```JavaScript
+ d)
+ ```JavaScript
  const chooseColor = document.querySelector('#color');
 chooseColor.addEventListener('input', function(){
     let val = document.getElementById('slider').value;
@@ -123,7 +124,8 @@ chooseColor.addEventListener('input', function(){
  ```
  This function selects the color input according to what the user specifies in the input box
  
- e) ```JavaScript
+ e)
+ ```JavaScript
  const slider = document.querySelector('#slider');
 const screenVal = document.querySelector('.value');
 
