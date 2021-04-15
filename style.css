@@ -47,9 +47,11 @@
         font-weight: 400;
         
         
-       margin: 1.5rem 25% 1.5rem 0;
+       margin: 1.5rem auto;
         color: #fff;
         text-shadow: 0 1rem 1rem rgba(0,0,0,.4);
+        position:relative;
+        left: 7rem;
     }
 
     a{
@@ -226,8 +228,8 @@
     grid-template-rows: repeat(16, 2fr );
     border: .5rem solid #ddffbc;
     border-radius: .5rem;
-    height: 57.5rem;
-    width: 57.5rem;
+    height: 50rem;
+    width: 50rem;
     background-color: #ddffbc;
     
 }
