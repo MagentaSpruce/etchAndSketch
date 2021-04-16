@@ -11,7 +11,9 @@ This project helped me to better learn:
 4) Using -webkits
 5) Flexbox
 
-//There are no slated improvements or changes for this project// -- It is marked as finished. The Explanation for the JS code is following:
+//1 improvement needed - remove outline from control buttons when selected//
+
+The Explanation for the JS code is following:
 
 1) Make a function that will create a grid that is 16x16.
 
